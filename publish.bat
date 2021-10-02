@@ -1,0 +1,1 @@
+docker build -t mauriciosff/music-bot . && docker push mauriciosff/music-bot:latest
