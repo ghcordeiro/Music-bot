@@ -1,9 +1,11 @@
 player.on('error', (queue, error) => {
     console.log(`Error emitted from the queue ${error.message}`);
+    exit(0);
 });
 
 player.on('connectionError', (queue, error) => {
     console.log(`Error emitted from the connection ${error.message}`);
+    exit(0);
 });
 
 player.on('trackStart', (queue, track) => {
